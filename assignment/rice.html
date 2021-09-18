@@ -8,84 +8,78 @@
     <title>Assignment1</title>
 </head>
 <style>
-    .container {
-        position: relative;
-        margin-left: 14vw;
-        margin-right: 7vw;
-        margin-top: 35px;
-        margin-bottom: 30px;
-        width: 70vw;
-        height: 90vh;
-        color:greenyellow;
-        /*background-color:cornsilk;*/
-       box-shadow: 5px 5px 4px 4px purple;
-       transform: translate(-1%, -1%);
-       }
-
-    .head {
-        width: 100%;
-        background-color:purple;
-        height: 10%;
-        padding-top: 2px;
-        padding-left: 20px;
-        box-sizing: border-box;
-    }
-
-    h1 {
+    *{
         margin: 0;
         padding: 0;
     }
-
+    .flex{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .head {
+        width: 100%;
+        height: 10%;
+        background-color:deepskyblue;
+    }
+    .body {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .list {
-        position: absolute;
-        background-color:cornflowerblue ;
-        top: 10%;
         width: 50%;
-        height: 90%;
-        padding-left: 2px;
+        height: 100%;
+        background-color: chartreuse;
+        padding-left: 5px;
+        text-align: justify;
     }
-
+    .list1{
+        padding-left: 40px;
+    }
     .context {
-        position: absolute;
-        background-color:slategray ;
-        top: 10%;
         width: 50%;
-        left: 50%;
-        height: 90%;
-
+        height: 100%;
+        background-color:darkgrey;
+        padding-left: 5px;
+        text-align: justify;
     }
-    #rice{
-        margin-left: 5px;
-        margin-top: 19px;
-    }
-   
-    
 </style>
-
 <body>
-    <div class="container">
-        <div class="head">
-            <h1>လယ်သမားဆန်ဆိုင်မှကြိုဆိုပါ၏</h1>
+    <div class="flex">
+        <div class="container">
+            <div class="head">
+                <h1>လယ်သမားဆန်ဆိုင်မှကြိုဆိုပါ၏</h1>
+            </div>
+            <div class="body">
+                <div class="list">
+                        <p>လယ်သမားဆန်ဆိုင်မှ ဆန်စျေးနှုန်းများနှင့် ရရှိနိုင်သော အထူးသန့်စင်ထားပြီးသားဆန်များ</p>
+                        <ul class="list1">
+                        <li><a href="rice1.html">ပေါ်ဆန်းမွှေး</a></li>
+                        <li><a href="rice2.html">ဧရာပဒေသာ</a> </li>
+                        <li><a href="rice3.html">မဂျမ်းတော</a> </li>
+                        </ul>
+                </div>
+                <div class="context">
+                    <p id="rice">
+                        ဆန်အလှူရှင်များနှင့် (၁)ပြည်မှစ၍ အားပေးမှုအတွက်အထူးကျေးဇူးတင်ပါသည်<br />
+                        အားပေးသူတိုင်း စီးပွားရေးတွေ ဆထက်တစ်ပိုးကြီးပွားတိုးတက်ကြပါစေလို့<br />လယ်သမားဆန်ဆိုင်မှ
+                        ဆုတောင်းပေးလိုက်ပါတယ်
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="list">
-            <ul>
-                <p>လယ်သမားဆန်ဆိုင်မှ ဆန်စျေးနှုန်းများနှင့် ရရှိနိုင်သော အထူးသန့်စင်ထားပြီးသားဆန်များ</p>
-                <li><a href="rice1.html">ပေါ်ဆန်းမွှေး</a></li>
-                <li><a href = "rice2.html">ဧရာပဒေသာ</a> </li>
-                <li><a href = "rice3.html">မဂျမ်းတော</a> </li>
-                
-                
-            </ul>
-        </div>
-        <div class="context">
-            <p id="rice">
-                ဆန်အလှူရှင်များနှင့် (၁)ပြည်မှစ၍ အားပေးမှုအတွက်အထူးကျေးဇူးတင်ပါသည်<br />
-               အားပေးသူတိုင်း စီးပွားရေးတွေ ဆထက်တစ်ပိုးကြီးပွားတိုးတက်ကြပါစေလို့<br />လယ်သမားဆန်ဆိုင်မှ ဆုတောင်းပေးလိုက်ပါတယ်
-            </p>
-        </div>
-
     </div>
-
 </body>
-
 </html>
