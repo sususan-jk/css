@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mobile_nav{
+            display: none;
+        }
+        #hamburger{
+            display: none;
+        }
+        .show_nav{
+            display: block;
+        }
+        @media screen and (max-width: 480px){
+            .navbar{
+                display: none;
+            }
+            #hamburger{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="navbar">
+        <h1>This is Navbar and its item</h1>
+   </div> 
+   <button id="hamburger">Show Navbar</button>
+   <div class="mobile_nav">
+        <h1>This is Mobile Navbar and its item</h1>
+   </div>
+   <script>
+       const hamburgerButton=document.getElementById("hamburger");
+       hamburgerButton.onclick=handleClick;
+       function handleClick(e){
+           const nav=document.querySelector(".mobile_nav");
+           nav.classList.toggle("show_nav")
+       }
+   </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid area</title>
+    <style>
+        .wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sidebar,.header,.content{
+            border: 1px solid black;
+        }
+        .sidebar{
+            grid-area: s;
+            background-color: chartreuse;
+        }
+        .header{
+            grid-area: h;
+            background-color: cyan;
+        }
+        .content{
+            grid-area: c;
+            background-color: darkorange;
+        }
+        .container{
+            display: grid;
+            width: 60vw;
+            height: 90vh;
+            grid-template-areas: "h h h"
+                                 "s c c";
+            grid-template-rows: 20% 80%;
+            grid-template-columns: 35% 65%;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+   <div class="wrapper">
+    <div class="container">
+        <div class="header">
+            <center>This is header</center>
+        </div>
+        <div class="sidebar">
+             <ul>
+                <li><a>link1</a></li>
+                <li><a>link2</a></li>
+                <li><a>link3</a></li>
+             </ul>   
+        </div>
+        <div class="content">
+            <p>
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, eum asperiores 
+               exercitationem voluptatum incidunt, dolorem odio accusamus error quae perspiciatis 
+               rem quas odit, maiores commodi voluptatem fugiat. Nemo voluptatibus, molestiae doloremque
+                quas nulla cum tempore laboriosam deleniti. Ut minus, consequuntur quisquam animi
+                ullam sed laudantium, laborum dolorem nobis assumenda id esse in unde ipsam natus 
+                quos nisi autem distinctio ipsum? Dolorem in voluptas totam laudantium quis, consectetur 
+                laboriosam soluta nemo officia vitae libero assumenda nesciunt, pariatur quia! Libero odio 
+                voluptas blanditiis, molestiae fugiat eos? Asperiores in nostrum assumenda. 
+               Vero cum hic cupiditate sint officia error vel odio nam adipisci repellendus!
+            </p>
+        </div>
+    </div>
+   </div>
+</body>
+</html>

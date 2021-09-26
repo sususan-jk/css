@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media_query</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 1000px;
+            /* max-width: 1200px; */
+            /* min-width: 600px; */
+            border: 3px solid salmon;
+            padding: 20px;
+        }
+        .mobile,.tablet{
+            display: none;
+        }
+        @media screen and (max-width:480px) {
+            .box{
+                width: 50px;
+                border-color: yellow;
+            }
+            .mobile{display: block;}
+            .laptop{display: none;}
+        }
+        @media screen and (min-width:481px) and (max-width:1000px){
+            .box{
+                width: 200px;
+                border-color: violet;
+            }
+            .laptop,.mobile{display: none;}  
+            .tablet{display: block;}  
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="laptop">This is laptop</div>
+    <div class="mobile">This is mobile protrait</div>
+    <div class="tablet">This is tablet and mobile landscape</div>
+    <img class="box" src="image.webp" alt="photo" />
+</body>
+</html>
